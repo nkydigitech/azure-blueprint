@@ -1,0 +1,301 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Azure Blueprint: a beginner-to-hero Azure learning platform with roadmap, labs, commands, assessments and capstone.">
+  <title>Azure Blueprint | Zero to Azure Hero</title>
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+<header class="topbar">
+  <a class="brand" href="#home" aria-label="Azure Blueprint home">
+    <span class="brand-mark">☁</span><span>Azure <b>Blueprint</b></span>
+  </a>
+  <button class="mobile-menu" id="mobileMenu" aria-label="Open navigation">☰</button>
+  <nav id="topNav">
+    <a href="#roadmap">Roadmap</a><a href="#labs">Labs</a><a href="#commands">CLI</a>
+    <a href="#assessments">Assessments</a><a href="#capstone">Capstone</a>
+    <button id="themeToggle" class="icon-btn" title="Toggle theme">◐</button>
+  </nav>
+</header>
+
+<div class="app-shell">
+<aside class="sidebar" id="sidebar">
+  <div class="side-search"><input id="searchInput" placeholder="Search Azure Blueprint…" autocomplete="off"></div>
+  <div id="searchResults" class="search-results"></div>
+  <div class="side-title">Learning path</div>
+  <a class="side-link active" href="#home">⌂ <span>Home</span></a>
+  <a class="side-link" href="#start">01 <span>Start Here</span></a>
+  <a class="side-link" href="#fundamentals">02 <span>Azure Fundamentals</span></a>
+  <a class="side-link" href="#architecture">03 <span>Architecture</span></a>
+  <a class="side-link" href="#networking">04 <span>Networking</span></a>
+  <a class="side-link" href="#compute">05 <span>Compute</span></a>
+  <a class="side-link" href="#storage">06 <span>Storage</span></a>
+  <a class="side-link" href="#databases">07 <span>Databases</span></a>
+  <a class="side-link" href="#identity">08 <span>Identity & Security</span></a>
+  <a class="side-link" href="#devops">09 <span>DevOps & Automation</span></a>
+  <a class="side-link" href="#monitoring">10 <span>Monitoring</span></a>
+  <a class="side-link" href="#cost">11 <span>Cost Management</span></a>
+  <a class="side-link" href="#commands">12 <span>CLI Command Center</span></a>
+  <a class="side-link" href="#labs">13 <span>Hands-on Labs</span></a>
+  <a class="side-link" href="#assessments">14 <span>Assessments</span></a>
+  <a class="side-link" href="#capstone">15 <span>Capstone</span></a>
+  <a class="side-link" href="#troubleshooting">16 <span>Troubleshooting</span></a>
+  <a class="side-link" href="#glossary">17 <span>Glossary</span></a>
+  <a class="side-link" href="#career">18 <span>Career Roadmap</span></a>
+  <div class="progress-card">
+    <div class="progress-head"><span>Your progress</span><strong id="progressText">0%</strong></div>
+    <div class="progress"><i id="progressBar"></i></div>
+    <small>Progress is saved in this browser.</small>
+  </div>
+</aside>
+
+<main id="content">
+<section id="home" class="hero section">
+  <div class="hero-copy">
+    <span class="eyebrow">BEGINNER → PRACTITIONER → CLOUD BUILDER → AZURE HERO</span>
+    <h1>Azure Blueprint:<br><span>Your Journey from Zero to Azure Hero</span></h1>
+    <p class="lead">A practical, self-paced Azure curriculum that teaches the concepts, commands, labs, security, cost controls, automation and portfolio skills you need to build real cloud environments.</p>
+    <div class="hero-actions"><a class="btn primary" href="#start">Start Learning →</a><a class="btn ghost" href="#roadmap">View Roadmap</a></div>
+    <div class="hero-pills"><span>✓ No prior Azure experience</span><span>✓ Windows-first setup</span><span>✓ Hands-on labs</span><span>✓ GitHub Pages ready</span></div>
+  </div>
+  <div class="hero-visual">
+    <div class="cloud-orbit"><div class="orbit o1"></div><div class="orbit o2"></div><div class="cloud">☁</div><span class="node n1">CLI</span><span class="node n2">VM</span><span class="node n3">APP</span><span class="node n4">DB</span></div>
+  </div>
+</section>
+
+<section id="start" class="section">
+  <div class="section-head"><span class="eyebrow">START HERE</span><h2>What you will be able to do</h2><p>Follow the path in order. Every lesson answers what you are doing, why it matters, what to type, what success looks like, what can fail, what it can cost, and what to learn next.</p></div>
+  <div class="grid three">
+    <article class="card"><div class="card-icon">01</div><h3>Understand Azure</h3><p>Build a strong mental model of cloud computing, subscriptions, tenants, resources, regions and Azure Resource Manager.</p></article>
+    <article class="card"><div class="card-icon">02</div><h3>Build safely</h3><p>Use identity, RBAC, networking, Key Vault, monitoring and cost controls rather than treating security and billing as afterthoughts.</p></article>
+    <article class="card"><div class="card-icon">03</div><h3>Ship real projects</h3><p>Move from Portal clicks to Azure CLI, GitHub Actions, infrastructure as code and a production-style capstone.</p></article>
+  </div>
+  <div class="callout warning"><b>Before you create resources:</b> Azure pricing, quotas, free-tier limits and service capabilities change. Verify current details in Microsoft documentation and always clean up lab resources.</div>
+</section>
+
+<section id="fundamentals" class="section tinted">
+  <div class="section-head"><span class="eyebrow">LEVEL 0</span><h2>Azure Fundamentals</h2><p>Start with simple language, then connect each idea to the technical model.</p></div>
+  <div class="concept-grid">
+    <article class="concept"><h3>Cloud computing</h3><p><b>Simple:</b> Rent computing resources over the internet instead of buying and operating all the hardware yourself.</p><p><b>Technical:</b> On-demand compute, storage, networking and managed services delivered through provider APIs and control planes.</p></article>
+    <article class="concept"><h3>Azure</h3><p><b>Simple:</b> Microsoft's cloud platform.</p><p><b>Technical:</b> A global set of cloud services exposed through the Azure Portal, APIs, CLI, SDKs and infrastructure-management systems.</p></article>
+    <article class="concept"><h3>Resource Group</h3><p><b>Simple:</b> A logical folder for related resources.</p><p><b>Technical:</b> A management boundary used to organize resources, apply tags, permissions and lifecycle operations.</p></article>
+    <article class="concept"><h3>Subscription</h3><p><b>Simple:</b> The Azure account boundary you use to organize and pay for resources.</p><p><b>Technical:</b> A billing and management container associated with a Microsoft Entra tenant.</p></article>
+    <article class="concept"><h3>Region & Availability Zone</h3><p><b>Simple:</b> A region is a geographic Azure location; zones are separate physical locations within supported regions.</p><p><b>Technical:</b> Regions provide geographic placement; availability zones provide datacenter-level fault isolation for supported services.</p></article>
+    <article class="concept"><h3>Tenant</h3><p><b>Simple:</b> The organization's identity directory.</p><p><b>Technical:</b> A Microsoft Entra ID directory containing identities, groups, applications and identity policies.</p></article>
+  </div>
+  <div class="comparison">
+    <h3>Azure vs AWS vs Google Cloud</h3>
+    <table><thead><tr><th>Concept</th><th>Azure</th><th>AWS</th><th>Google Cloud</th></tr></thead><tbody>
+      <tr><td>Compute VM</td><td>Virtual Machines</td><td>EC2</td><td>Compute Engine</td></tr>
+      <tr><td>Object storage</td><td>Blob Storage</td><td>S3</td><td>Cloud Storage</td></tr>
+      <tr><td>Identity</td><td>Microsoft Entra ID</td><td>IAM</td><td>Cloud Identity / IAM</td></tr>
+      <tr><td>Kubernetes</td><td>AKS</td><td>EKS</td><td>GKE</td></tr>
+    </tbody></table>
+  </div>
+</section>
+
+<section id="architecture" class="section">
+  <div class="section-head"><span class="eyebrow">LEVEL 1</span><h2>Architecture & Core Services</h2><p>Learn how the pieces fit together before memorizing service names.</p></div>
+  <div class="architecture">
+    <div class="arch-flow"><div>User</div><i>↓</i><div>Azure Front Door / Load Balancer</div><i>↓</i><div>App Service / Container Apps</div><i>↓</i><div>Azure SQL / Cosmos DB</div></div>
+    <div class="arch-flow"><div>GitHub</div><i>↓</i><div>GitHub Actions</div><i>↓</i><div>Azure Container Registry</div><i>↓</i><div>Container Apps / AKS</div></div>
+  </div>
+  <div class="grid three">
+    <article class="card"><h3>Management plane</h3><p>Operations that create and manage resources, commonly through ARM, Portal, CLI, PowerShell, Bicep or Terraform.</p></article>
+    <article class="card"><h3>Data plane</h3><p>Operations against the resource itself, such as reading a blob, querying a database or serving application traffic.</p></article>
+    <article class="card"><h3>Shared responsibility</h3><p>Azure secures the underlying cloud infrastructure; you remain responsible for your configuration, identities, data and workloads according to the service model.</p></article>
+  </div>
+</section>
+
+<section id="networking" class="section tinted">
+  <div class="section-head"><span class="eyebrow">LEVEL 2</span><h2>Networking</h2><p>Understand how traffic moves, where it is allowed, and how private connectivity changes the design.</p></div>
+  <div class="topic-list">
+    <div><b>Virtual Network (VNet)</b><span>Private network boundary for Azure resources.</span></div>
+    <div><b>Subnet</b><span>Segment of a VNet used to organize workloads and apply controls.</span></div>
+    <div><b>NSG</b><span>Stateful network security rules controlling permitted inbound and outbound traffic.</span></div>
+    <div><b>Private Endpoint</b><span>Private IP-based access to supported PaaS resources from a VNet.</span></div>
+    <div><b>VNet Peering</b><span>Connect VNets so resources can communicate privately across the peering relationship.</span></div>
+    <div><b>Application Gateway</b><span>Layer-7 load balancing and web traffic features such as TLS termination and WAF support.</span></div>
+  </div>
+  <div class="callout info"><b>Networking checkpoint:</b> Explain the path from a browser to a web application and identify where DNS, public IP, NSG, load balancing, application hosting and database connectivity belong.</div>
+</section>
+
+<section id="compute" class="section">
+  <div class="section-head"><span class="eyebrow">LEVEL 3</span><h2>Compute & Containers</h2></div>
+  <table class="service-table"><thead><tr><th>Service</th><th>Best mental model</th><th>Use it when…</th></tr></thead><tbody>
+    <tr><td>Virtual Machines</td><td>Rent a server</td><td>You need OS-level control or software that requires a VM.</td></tr>
+    <tr><td>App Service</td><td>Managed web application hosting</td><td>You want to deploy web apps without managing the underlying VM.</td></tr>
+    <tr><td>Functions</td><td>Event-driven code</td><td>Work is triggered by events and can fit a serverless model.</td></tr>
+    <tr><td>Container Apps</td><td>Managed container platform</td><td>You want containers with less orchestration overhead than Kubernetes.</td></tr>
+    <tr><td>AKS</td><td>Managed Kubernetes</td><td>You need Kubernetes APIs, ecosystem and orchestration capabilities.</td></tr>
+  </tbody></table>
+</section>
+
+<section id="storage" class="section tinted">
+  <div class="section-head"><span class="eyebrow">LEVEL 4</span><h2>Storage</h2><p>Choose storage by access pattern, durability, performance, security and cost.</p></div>
+  <div class="grid four">
+    <article class="mini-card"><b>Blob Storage</b><span>Object data such as documents, media, backups and artifacts.</span></article>
+    <article class="mini-card"><b>Azure Files</b><span>Managed file shares accessible through standard file protocols.</span></article>
+    <article class="mini-card"><b>Queues</b><span>Message-oriented storage for decoupling workloads.</span></article>
+    <article class="mini-card"><b>Managed Disks</b><span>Block storage for Azure VMs.</span></article>
+  </div>
+</section>
+
+<section id="databases" class="section">
+  <div class="section-head"><span class="eyebrow">LEVEL 5</span><h2>Databases</h2></div>
+  <div class="grid three">
+    <article class="card"><h3>Azure SQL Database</h3><p>Managed relational database service for SQL workloads. Learn connectivity, firewall rules, identity, backups and scaling.</p></article>
+    <article class="card"><h3>Cosmos DB</h3><p>Globally distributed NoSQL database service with multiple APIs and configurable consistency models.</p></article>
+    <article class="card"><h3>Database discipline</h3><p>Every project should document data classification, access control, backups, recovery expectations, secrets and cost.</p></article>
+  </div>
+</section>
+
+<section id="identity" class="section tinted">
+  <div class="section-head"><span class="eyebrow">LEVEL 6</span><h2>Identity & Security</h2></div>
+  <div class="grid two">
+    <article class="card"><h3>Authentication vs Authorization</h3><p><b>Authentication:</b> proves who you are. <b>Authorization:</b> determines what you can do.</p><div class="callout info">Example: Entra ID can authenticate a user; Azure RBAC can authorize that identity to read a resource group.</div></article>
+    <article class="card"><h3>RBAC vs Entra roles</h3><p><b>Azure RBAC</b> controls access to Azure resources. <b>Microsoft Entra roles</b> control directory and identity-management operations. They solve different authorization scopes.</p></article>
+    <article class="card"><h3>Managed identity</h3><p>Let an Azure resource obtain an identity without embedding long-lived credentials in application code.</p></article>
+    <article class="card"><h3>Key Vault</h3><p>Centralize secrets, keys and certificates with controlled access. Avoid hard-coding credentials in repositories or workflows.</p></article>
+  </div>
+</section>
+
+<section id="devops" class="section">
+  <div class="section-head"><span class="eyebrow">LEVEL 7</span><h2>DevOps & Automation</h2><p>Move from manual portal work to repeatable delivery.</p></div>
+  <div class="pipeline"><span>Git</span><b>→</b><span>GitHub</span><b>→</b><span>GitHub Actions</span><b>→</b><span>Azure</span><b>→</b><span>Monitor</span></div>
+  <div class="grid three">
+    <article class="card"><h3>Infrastructure as Code</h3><p>Terraform and Bicep allow infrastructure to be versioned, reviewed and reproduced rather than manually rebuilt.</p></article>
+    <article class="card"><h3>CI/CD</h3><p>Automate build, test and deployment stages. Keep secrets out of source code and use least-privilege authentication.</p></article>
+    <article class="card"><h3>Deployment strategies</h3><p>Learn rolling, blue-green and canary concepts, then select a strategy based on risk, traffic and rollback needs.</p></article>
+  </div>
+</section>
+
+<section id="monitoring" class="section tinted">
+  <div class="section-head"><span class="eyebrow">LEVEL 8</span><h2>Monitoring & Reliability</h2></div>
+  <div class="topic-list">
+    <div><b>Azure Monitor</b><span>Unified monitoring platform for metrics, logs, alerts and operational signals.</span></div>
+    <div><b>Log Analytics</b><span>Workspace-based log collection and KQL analysis.</span></div>
+    <div><b>Application Insights</b><span>Application performance and telemetry capabilities.</span></div>
+    <div><b>Alerts</b><span>Notify or automate when defined metric or log conditions occur.</span></div>
+    <div><b>Reliability</b><span>Design for failure, backups, recovery objectives, scaling and appropriate availability architecture.</span></div>
+  </div>
+</section>
+
+<section id="cost" class="section">
+  <div class="section-head"><span class="eyebrow">LEVEL 9</span><h2>Don't Get a Surprise Azure Bill</h2><p>Cost control is part of cloud engineering, not an optional final step.</p></div>
+  <div class="grid three">
+    <article class="card"><h3>Know what can cost money</h3><p>VM compute, managed disks, public IPs, databases, networking, storage, managed Kubernetes and other services can generate charges depending on configuration and usage.</p></article>
+    <article class="card"><h3>Use guardrails</h3><p>Use budgets, alerts, tags, Cost Management and the Pricing Calculator. Verify current free-tier terms before relying on them.</p></article>
+    <article class="card"><h3>Clean up</h3><p>After each lab, identify all dependent resources and delete what you no longer need. Stopping one resource does not necessarily stop every associated charge.</p></article>
+  </div>
+  <div class="checklist"><h3>Cost Safety Checklist</h3><label><input type="checkbox" data-check="cost1"> I identified every resource created by the lab.</label><label><input type="checkbox" data-check="cost2"> I checked current pricing/free-tier terms.</label><label><input type="checkbox" data-check="cost3"> I configured a budget or alert where appropriate.</label><label><input type="checkbox" data-check="cost4"> I deleted or deallocated resources according to their billing behavior.</label><label><input type="checkbox" data-check="cost5"> I verified the resource group is clean.</label></div>
+</section>
+
+<section id="commands" class="section tinted">
+  <div class="section-head"><span class="eyebrow">COMMAND CENTER</span><h2>Azure CLI</h2><p>Commands are labeled by environment. The examples below are designed for Windows PowerShell, Azure Cloud Shell and can generally run in Bash with appropriate syntax.</p></div>
+  <div class="terminal">
+    <div class="terminal-tabs"><button class="term-tab active">Windows PowerShell</button><button class="term-tab">Azure Cloud Shell</button></div>
+    <div class="terminal-body"><div class="term-title">Authenticate and inspect your account</div><pre><code>az login
+az account show
+az account list --output table
+
+# Create a lab resource group
+az group create --name rg-azure-blueprint --location eastus
+
+# Inspect it
+az group show --name rg-azure-blueprint
+
+# Delete the entire lab resource group when finished
+az group delete --name rg-azure-blueprint --yes --no-wait</code></pre><button class="copy-btn">Copy commands</button></div>
+  </div>
+  <div class="command-grid">
+    <article><b>Account</b><code>az account show</code><code>az account set --subscription "&lt;SUBSCRIPTION_ID&gt;"</code></article>
+    <article><b>Resource groups</b><code>az group list --output table</code><code>az group delete --name &lt;RG&gt;</code></article>
+    <article><b>Resources</b><code>az resource list --resource-group &lt;RG&gt; --output table</code></article>
+    <article><b>Storage</b><code>az storage account list --output table</code></article>
+    <article><b>VMs</b><code>az vm list --show-details --output table</code><code>az vm deallocate --resource-group &lt;RG&gt; --name &lt;VM&gt;</code></article>
+    <article><b>Web apps</b><code>az webapp list --output table</code><code>az webapp log tail --name &lt;APP&gt; --resource-group &lt;RG&gt;</code></article>
+  </div>
+  <div class="callout warning"><b>Verification habit:</b> Do not assume a command succeeded because it returned to the prompt. Inspect the resource, check the Portal when useful, and validate the application from the user perspective.</div>
+</section>
+
+<section id="labs" class="section">
+  <div class="section-head"><span class="eyebrow">HANDS-ON</span><h2>4 Progressive Labs</h2><p>Complete each lab before moving to the next. Tick the checklist items to save your progress locally.</p></div>
+  <div class="lab-grid">
+    <article class="lab-card"><span class="lab-num">LAB 01</span><h3>Azure Foundations</h3><p>Create a resource group and storage account, upload a file, verify it, then clean up.</p><ul><li>Azure login</li><li>Resource Group</li><li>Storage Account + Blob</li><li>Portal + CLI</li><li>Verification + cleanup</li></ul><button class="btn small" onclick="openLab(0)">Open Lab →</button></article>
+    <article class="lab-card"><span class="lab-num">LAB 02</span><h3>Deploy a Linux VM</h3><p>Build a VNet/subnet, NSG and Linux VM, connect by SSH, install Nginx and expose HTTP.</p><ul><li>Networking</li><li>Linux VM</li><li>SSH</li><li>Nginx</li><li>Cost-safe teardown</li></ul><button class="btn small" onclick="openLab(1)">Open Lab →</button></article>
+    <article class="lab-card"><span class="lab-num">LAB 03</span><h3>Web App on App Service</h3><p>Deploy a simple web app, configure environment variables, inspect logs and practice scaling.</p><ul><li>App Service Plan</li><li>Web App</li><li>Configuration</li><li>Logs</li><li>Cleanup</li></ul><button class="btn small" onclick="openLab(2)">Open Lab →</button></article>
+    <article class="lab-card"><span class="lab-num">LAB 04</span><h3>GitHub → Azure CI/CD</h3><p>Build a secure GitHub Actions workflow that deploys an application to Azure without hard-coded credentials.</p><ul><li>GitHub repo</li><li>OIDC/authentication</li><li>Build + deploy</li><li>Monitoring</li><li>Documentation</li></ul><button class="btn small" onclick="openLab(3)">Open Lab →</button></article>
+  </div>
+</section>
+
+<section id="assessments" class="section tinted">
+  <div class="section-head"><span class="eyebrow">ASSESSMENTS</span><h2>Check your understanding</h2><p>Choose an answer. Your score is calculated in the browser.</p></div>
+  <div id="quiz"></div>
+  <div class="rubric"><h3>Lab grading rubric</h3><table><tr><th>Area</th><th>Marks</th></tr><tr><td>Resource creation</td><td>20</td></tr><tr><td>Configuration</td><td>20</td></tr><tr><td>Security</td><td>20</td></tr><tr><td>Deployment</td><td>20</td></tr><tr><td>Documentation</td><td>10</td></tr><tr><td>Cleanup</td><td>10</td></tr><tr><th>Total</th><th>100</th></tr></table></div>
+</section>
+
+<section id="capstone" class="section">
+  <div class="section-head"><span class="eyebrow">FINAL PROJECT</span><h2>Production-Style Azure Web Application</h2><p>Combine architecture, identity, security, automation, monitoring and cost control into one portfolio project.</p></div>
+  <div class="capstone-flow"><span>GitHub</span><b>→</b><span>GitHub Actions</span><b>→</b><span>Azure</span><b>→</b><span>Application</span><b>→</b><span>Monitoring</span></div>
+  <div class="grid two">
+    <article class="card"><h3>Required deliverables</h3><ul class="clean"><li>Architecture diagram</li><li>GitHub repository + README</li><li>Infrastructure definition</li><li>Application</li><li>CI/CD pipeline</li><li>Identity/RBAC configuration</li><li>Key Vault strategy</li><li>Monitoring, logs and alerts</li><li>Cost-management strategy</li><li>Cleanup strategy</li></ul></article>
+    <article class="card"><h3>Capstone rubric</h3><table><tr><td>Architecture</td><td>15</td></tr><tr><td>Infrastructure</td><td>15</td></tr><tr><td>Application</td><td>15</td></tr><tr><td>CI/CD</td><td>15</td></tr><tr><td>Security & identity</td><td>15</td></tr><tr><td>Monitoring/reliability</td><td>10</td></tr><tr><td>Cost controls</td><td>5</td></tr><tr><td>Documentation</td><td>10</td></tr><tr><th>Total</th><th>100</th></tr></table></article>
+  </div>
+</section>
+
+<section id="troubleshooting" class="section tinted">
+  <div class="section-head"><span class="eyebrow">TROUBLESHOOTING</span><h2>Problem → Diagnosis → Fix</h2></div>
+  <div class="trouble-grid">
+    <details><summary><b>az: command not found / not recognized</b></summary><p>Confirm Azure CLI is installed, restart the terminal, and run <code>az --version</code>. If the command is still unavailable, check that the Azure CLI installation directory is on PATH.</p></details>
+    <details><summary><b>Subscription not found</b></summary><p>Run <code>az account list --output table</code>. If the expected subscription is missing, confirm you logged into the correct tenant/account and have access to the subscription.</p></details>
+    <details><summary><b>Permission denied</b></summary><p>Separate authentication from authorization. Confirm the signed-in identity and the Azure RBAC role/scope required by the operation. Avoid granting Owner when a narrower role is sufficient.</p></details>
+    <details><summary><b>SSH to VM fails</b></summary><p>Check the VM is running, the public IP/DNS is correct, the NSG allows the intended SSH source, the username/key is correct, and no local network control is blocking the connection.</p></details>
+    <details><summary><b>Port 80 is unavailable</b></summary><p>Check the NSG, the web server process, the VM's local firewall and the public IP path. Test locally on the VM before debugging the external path.</p></details>
+    <details><summary><b>GitHub Actions deployment fails</b></summary><p>Inspect the workflow logs, validate Azure authentication and permissions, confirm the target resource exists, and verify environment variables. Never solve a secret failure by committing credentials.</p></details>
+    <details><summary><b>Quota/region error</b></summary><p>Read the exact deployment error, check service availability and quotas for the subscription/region, then select an allowed region or request quota where appropriate.</p></details>
+    <details><summary><b>Resource deletion fails</b></summary><p>Inspect dependencies and locks. Some resources have child resources or protection settings that must be removed first. Re-run a resource inventory before retrying.</p></details>
+  </div>
+</section>
+
+<section id="glossary" class="section">
+  <div class="section-head"><span class="eyebrow">REFERENCE</span><h2>Azure Glossary</h2><input id="glossarySearch" class="glossary-search" placeholder="Search terms…"></div>
+  <div id="glossaryGrid" class="glossary-grid"></div>
+</section>
+
+<section id="career" class="section tinted">
+  <div class="section-head"><span class="eyebrow">CAREER ROADMAP</span><h2>Where do you go from here?</h2><p>Certifications can validate knowledge, but projects, troubleshooting ability and evidence of hands-on work matter too.</p></div>
+  <div class="career-grid">
+    <article><h3>Azure Administrator</h3><p>Focus: subscriptions, identity, networking, compute, storage, governance and operations.</p></article>
+    <article><h3>Cloud / DevOps Engineer</h3><p>Focus: Git, CI/CD, IaC, containers, observability, security and automation.</p></article>
+    <article><h3>Cloud Security Engineer</h3><p>Focus: identity, RBAC, Defender, network controls, secrets, policies and threat detection.</p></article>
+    <article><h3>Cloud Architect</h3><p>Focus: architecture decisions, reliability, security, cost, governance and trade-offs.</p></article>
+    <article><h3>SRE / Platform Engineer</h3><p>Focus: reliability, automation, developer platforms, Kubernetes, observability and operational excellence.</p></article>
+    <article><h3>Azure Developer</h3><p>Focus: application development, APIs, serverless, managed databases, containers and deployment.</p></article>
+  </div>
+  <div class="callout info"><b>Certification note:</b> Use current Microsoft Learn pages to verify the latest certification names, exam objectives and retirement/transition announcements before planning an exam.</div>
+</section>
+
+<section id="setup" class="section">
+  <div class="section-head"><span class="eyebrow">WINDOWS SETUP</span><h2>Install your Azure learning toolkit</h2><p>PowerShell examples below are appropriate for Windows 10/11. Always verify installers and current versions from official vendor documentation.</p></div>
+  <div class="setup-grid">
+    <article><h3>Git</h3><p>Version control for your labs and portfolio.</p><code>git --version</code><p class="muted">Expected: a Git version string.</p></article>
+    <article><h3>Azure CLI</h3><p>Automate Azure resource management.</p><code>az --version</code><p class="muted">Expected: Azure CLI version details.</p></article>
+    <article><h3>Azure PowerShell</h3><p>PowerShell modules for Azure administration.</p><code>Get-Module Az -ListAvailable</code></article>
+    <article><h3>Terraform</h3><p>Infrastructure as Code.</p><code>terraform -version</code></article>
+    <article><h3>Docker Desktop</h3><p>Run containers locally and practice container workflows.</p><code>docker --version</code></article>
+    <article><h3>VS Code</h3><p>Editor for code, YAML, Terraform, Bicep and documentation.</p><code>code --version</code></article>
+  </div>
+  <div class="callout warning"><b>Environment rule:</b> Do not paste Bash-only commands into Windows PowerShell blindly. When syntax differs, this platform labels the environment explicitly.</div>
+</section>
+
+<footer><div><b>Azure Blueprint</b><p>Learn Azure by understanding it, building it, breaking it safely, fixing it, automating it and documenting it.</p></div><div><b>GitHub Pages ready</b><p>Static HTML/CSS/JS. No paid backend required. Progress uses browser localStorage.</p></div></footer>
+</main>
+</div>
+
+<div id="labModal" class="modal" aria-hidden="true"><div class="modal-box"><button class="modal-close" onclick="closeLab()">×</button><div id="labContent"></div></div></div>
+<script src="assets/app.js"></script>
+</body>
+</html>
