@@ -76,6 +76,19 @@ Azure service capabilities, pricing, quotas, free-tier terms, CLI syntax and sup
 
 Start Here → Fundamentals → Architecture → Networking → Compute → Storage → Databases → Identity & Security → DevOps → Monitoring → Cost → CLI → Labs → Assessments → Capstone → Career.
 
+## Part of the Blueprint Series
+
+| # | Blueprint | Focus | Status |
+|---|-----------|-------|--------|
+| 1 | [ansible-guide](https://github.com/nkydigitech/ansible-guide) | Ansible Automation | ✅ Live |
+| 2 | [terraform-blueprint](https://github.com/nkydigitech/terraform-blueprint) | Infrastructure as Code | ✅ Live |
+| 3 | [aws-blueprint](https://github.com/nkydigitech/aws-blueprint) | Amazon Web Services | ✅ Live |
+| 4 | **azure-blueprint** | **Microsoft Azure** | **✅ Live** |
+| 5 | [kubernetes-blueprint](https://github.com/nkydigitech/kubernetes-blueprint) | Container Orchestration | ✅ Live |
+| 6 | [linux-blueprint](https://github.com/nkydigitech/linux-blueprint) | Linux Command Line | 🚧 Coming Soon |
+| 7 | [github-blueprint](https://github.com/nkydigitech/github-blueprint) | Git & GitHub | 🚧 Coming Soon |
+| 8 | [docker-blueprint](https://github.com/nkydigitech/docker-blueprint) | Containerization | 🚧 Coming Soon |
+
 ## Connect
 
 - **LinkedIn:** [Nkechi Ahanonye](https://www.linkedin.com/in/nkechiahanonye)
