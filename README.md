@@ -1,4 +1,14 @@
-# Azure Blueprint
+# ☁️ Azure Blueprint: Zero to Hero
+
+![Azure](https://img.shields.io/badge/Azure-0078D4?logo=microsoftazure&logoColor=white)
+![GitHub Pages](https://img.shields.io/badge/Deployed-GitHub%20Pages-181717?logo=github)
+![Beginners](https://img.shields.io/badge/Made%20for-Beginners-0a0e1a)
+
+**Built by [Nkechi Anna Ahanonye](https://www.linkedin.com/in/nkechiahanonye) — Cloud & DevOps Engineer | AWS · Ansible · Terraform · K8s | Training the Next Generation of African DevOps Engineers | Open to Remote Roles**
+
+For DevOps students who need relatable, hands-on examples — not textbook theory.
+
+---
 
 A static, beginner-to-hero Azure learning platform designed for GitHub Pages.
 
@@ -65,6 +75,19 @@ Azure service capabilities, pricing, quotas, free-tier terms, CLI syntax and sup
 ## Suggested learner workflow
 
 Start Here → Fundamentals → Architecture → Networking → Compute → Storage → Databases → Identity & Security → DevOps → Monitoring → Cost → CLI → Labs → Assessments → Capstone → Career.
+
+## Connect
+
+- **LinkedIn:** [Nkechi Ahanonye](https://www.linkedin.com/in/nkechiahanonye)
+- **X (Twitter):** [@NAhanonye](https://www.x.com/NAhanonye)
+- **Facebook:** [NkyDigitech](https://web.facebook.com/nkydigitech)
+- **Instagram:** [@nahanonye](https://www.instagram.com/nahanonye/)
+- **TikTok:** [@nkechiahanonye](https://www.tiktok.com/@nkechiahanonye)
+- **Portfolio:** [nkydigitech.github.io/nky-portfolio](https://nkydigitech.github.io/nky-portfolio/)
+
+---
+
+*Built with ❤️ for the DevOps community. Especially for African engineers who deserve accessible, relatable learning resources.*
 
 ## License
 
