@@ -89,6 +89,19 @@ Start Here → Fundamentals → Architecture → Networking → Compute → Stor
 | 7 | [github-blueprint](https://github.com/nkydigitech/github-blueprint) | Git & GitHub | 🚧 Coming Soon |
 | 8 | [docker-blueprint](https://github.com/nkydigitech/docker-blueprint) | Containerization | 🚧 Coming Soon |
 
+## Hands-On Labs (All $0 Cost)
+
+| Lab | Topic | Cost |
+|-----|-------|------|
+| [Lab 00](labs/00-setup/) | Setup: Azure CLI + Azurite | $0 |
+| [Lab 01](labs/01-local-storage/) | Blob Storage with Azurite | $0 |
+| [Lab 02](labs/02-bicep-whatif/) | Bicep Templates with What-If | $0 |
+| [Lab 03](labs/03-docker-aci/) | Docker + Azure Container Instances Preview | $0 |
+| [Lab 04](labs/04-vnet-security/) | Virtual Networks and Security Groups | $0 |
+| [Lab 05](labs/05-capstone/) | Capstone: Full 3-Tier App with Bicep | $0 |
+
+All labs use **what-if** (preview without deploying) or **Azurite** (local emulator) — zero cloud cost, zero risk.
+
 ## Connect
 
 - **LinkedIn:** [Nkechi Ahanonye](https://www.linkedin.com/in/nkechiahanonye)
