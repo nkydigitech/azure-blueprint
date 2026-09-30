@@ -4,7 +4,7 @@
 ![GitHub Pages](https://img.shields.io/badge/Deployed-GitHub%20Pages-181717?logo=github)
 ![Beginners](https://img.shields.io/badge/Made%20for-Beginners-0a0e1a)
 
-**Built by [Nkechi Anna Ahanonye](https://www.linkedin.com/in/nkechiahanonye) — Cloud & DevOps Engineer | I turn manual, 3 AM-breaking deployments into 1-min automated pipelines with AWS + Ansible + Terraform | Featured: 15-Module Ansible Lab with real terminal**
+**Built by [Nkechi Anna Ahanonye](https://www.linkedin.com/in/nkechiahanonye) — Cloud & DevOps Engineer | I turn 3 AM-breaking deployments into 1-min pipelines with AWS + Ansible + Terraform | Building security-first AI agents on Amazon Bedrock AgentCore | AI Governance on AWS certified**
 
 For DevOps students who need relatable, hands-on examples — not textbook theory.
 
